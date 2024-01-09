@@ -1,0 +1,14 @@
+# ignore all twbx 
+*.twbx
+
+#ignore env files
+.env
+
+#ignore zip files
+*.zip
+
+#ignore all ppt
+*.ppt
+
+# Ignore PowerPoint temporary files
+~$*.pptx

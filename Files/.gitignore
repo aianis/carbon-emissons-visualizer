@@ -11,4 +11,8 @@
 *.ppt
 
 # Ignore PowerPoint temporary files
-~$*.pptx
+*.pptx
+
+# Ignore dataviz folder
+dataviz/
+

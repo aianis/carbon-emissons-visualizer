@@ -30,7 +30,7 @@ df_selected_year = df.loc[df["year"] == selected_year]
 
 # 1. Create the choropleth map
 fig1 = px.choropleth(df, locations="iso_code", color="co2", hover_name="country", animation_frame="year", color_continuous_scale="RdYlBu_r", range_color=[df["co2"].min(), df["co2"].max()])
-fig1.update_layout(title=f"CO2 Emissions by Country Over Time in {selected_year}", coloraxis_colorbar_title="CO2 Emissions (Million Metric Tonnes)")
+fig1.update_layout(title=f"CO2 Emissions by Country Over Time", coloraxis_colorbar_title="CO2 Emissions (Million Metric Tonnes)")
 st.plotly_chart(fig1)
 
 # 2. Global CO2 Emissions Over Time

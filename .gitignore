@@ -16,3 +16,6 @@
 # Ignore dataviz folder
 dataviz/
 
+# ignore vscode 
+.vscode/
+

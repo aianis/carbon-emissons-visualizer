@@ -4,10 +4,14 @@ import plotly.express as px
 
 
 st.title("Interactive CO2 Emissions Visualizer")
+st.markdown("This web app visualizes CO2 emissions data from 1751 to date. Some data may be available only after certain years. Data source from [Our World in Data](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions).")
 
 
-st.image("./co2_image.jpg", width=700)
+st.image("./co2_image.jpg", width=700, caption = "Image by Unsplash.com @ Marek Piwnicki")
 
+
+#View in full screen for better experience
+st.markdown("**View Charts/Maps in full screen for better experience.**")
 
 url = "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
 df = pd.read_csv(url)
@@ -22,7 +26,7 @@ df = df.sort_values(by=["year"], ascending=True)
 years = df['year'].unique()
 
 # Sidebar
-st.sidebar.header('Choose a Year(1751-2017)')
+st.sidebar.header('Choose a Year(since 1751)')
 selected_year = st.sidebar.selectbox('Year', options=years)
 
 # Filter the dataframe for the selected year
@@ -35,7 +39,7 @@ st.plotly_chart(fig1)
 
 # 2. Global CO2 Emissions Over Time
 df_by_year = df.groupby("year").sum().reset_index()
-fig2 = px.line(df_by_year, x="year", y="co2", title=f"Global CO2 Emissions Over Time in {selected_year} (Million Metric Tonnes)")
+fig2 = px.line(df_by_year, x="year", y="co2", title=f"Global CO2 Emissions Over Time (Million Metric Tonnes)")
 st.plotly_chart(fig2)
 
 # 3. CO2 Emissions by Sector Over Time (Stacked Bar Chart)
@@ -46,7 +50,7 @@ st.plotly_chart(fig3)
 
 # 4. Bubble Chart: CO2 Emissions vs GDP per Capita
 df_selected_year = df_selected_year.dropna(subset=["co2_per_gdp"])
-fig4 = px.scatter(df_selected_year, x="co2_per_gdp", y="co2", size="co2", hover_name="country", color="iso_code", log_x=True, size_max=50, trendline="ols")
+fig4 = px.scatter(df_selected_year, x="co2_per_gdp", y="co2", size="co2", hover_name="country", color="country", log_x=True, size_max=50, trendline="ols")
 fig4.update_layout(title=f"CO2 Emissions vs GDP per Capita in {selected_year} (Million Metric Tonnes)")
 st.plotly_chart(fig4)
 

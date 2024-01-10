@@ -8,7 +8,7 @@
 *.zip
 
 #ignore all ppt
-*.ppt
+*.pptx
 
 # Ignore PowerPoint temporary files
 *.pptx

@@ -60,3 +60,4 @@ df_selected_year = df_selected_year.sort_values(by=["trade_co2"], ascending=Fals
 fig5 = px.violin(df_selected_year, y="trade_co2", x="country", hover_name="country", color="country", box=True, points="all")
 fig5.update_layout(title=f"Trade CO2 of Top 10 Regions and Countries in {selected_year} (Million Metric Tonnes)")
 st.plotly_chart(fig5)
+

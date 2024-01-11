@@ -10,9 +10,6 @@
 #ignore all ppt
 *.pptx
 
-# Ignore PowerPoint temporary files
-*.pptx
-
 # Ignore dataviz folder
 dataviz/
 

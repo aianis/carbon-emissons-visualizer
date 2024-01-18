@@ -1,13 +1,14 @@
-# Interactive CO2 Emissions Visualizer
+# Interactive CO2/Climate Change Awareness App
 
-Welcome to the Interactive CO2 Emissions Visualizer! This web app provides an engaging way to explore and understand global CO2 emissions data from 1751 to the present day. The data is sourced from [Our World in Data](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions).
+• Raises awareness of CO2 emission impact on global temperature and climate.
+• Utilizes machine learning for visualizing and predicting future CO2 levels and temperatures.
+• Empowers users to engage with and understand environmental data.
+• Provides an intuitive interface for easy interaction.
+• Encourages informed decision-making for climate consciousness.
+
+ This web app provides an engaging way to explore and understand global CO2 emissions data from 1751 to the present day. The data is sourced from [Our World in Data](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions).
 
 # Dependencies
-
-- [Streamlit](https://streamlit.io/): A Python library for creating web applications.
-- [Pandas](https://pandas.pydata.org/): A powerful data manipulation and analysis library.
-- [Plotly Express](https://plotly.com/python/plotly-express/): An easy-to-use data visualization library.
-
 Ensure you have these dependencies installed before running the Interactive CO2 Emissions Visualizer. You can install them using the following:
 
 ```bash
@@ -42,9 +43,8 @@ streamlit==1.1.0
 
 Stay tuned for updates! Future enhancements may include a machine learning model to predict CO2 emissions based on GDP per capita and population.
 
-**Feel free to explore, analyze, and gain insights into the fascinating world of CO2 emissions!**
+****
 
 *Note: Some data may be available only for certain years.*
 
 ---
-*Powered by Streamlit, Pandas, and Plotly Express.*

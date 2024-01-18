@@ -1,4 +1,3 @@
-```markdown
 # Interactive CO2 Emissions Visualizer
 
 Welcome to the Interactive CO2 Emissions Visualizer! This web app provides an engaging way to explore and understand global CO2 emissions data from 1751 to the present day. The data is sourced from [Our World in Data](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions).
@@ -49,4 +48,3 @@ Stay tuned for updates! Future enhancements may include a machine learning model
 
 ---
 *Powered by Streamlit, Pandas, and Plotly Express.*
-```

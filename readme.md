@@ -1,6 +1,10 @@
 # Interactive CO2/Climate Change Awareness App
 [Check out the app](https://carbon.streamlit.app/).
 
+![Map](https://github.com/aianis/carbon-emissons-visualizer/blob/main/Files/maps.png)
+
+
+
 
 • Raises awareness of CO2 emission impact on global temperature and climate.
 • Utilizes machine learning for visualizing and predicting future CO2 levels and temperatures.
